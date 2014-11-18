@@ -8,9 +8,11 @@ Gem::Specification.new do |spec|
   spec.version       = NoCacheControl::VERSION
   spec.authors       = ["Tomas Valent"]
   spec.email         = ["equivalent@eq8.eu"]
-  spec.summary       = %q{ Sets rails Cache-Control to no-cache }
+  spec.summary       = %q{ Sets Cache-Control to no-cache no-store on Rails app }
   spec.description   = "Sets browser caching headers on Rails app so that " +
-                       "caching of pages within will be disabled"
+    "browser caching of pages will be disabled. " +
+    "This is achived by setting Cache-Control to no-cache no-store " +
+    "+ Pragma header no-cache and Expires header to -1"
   spec.homepage      = "https://github.com/equivalent/no_cache_control"
   spec.license       = "MIT"
 
