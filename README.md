@@ -26,7 +26,7 @@ must do this.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'no_cache_control'
+gem 'no_cache_control', github: equivalent/no_cache_control
 ```
 
 And then execute:
