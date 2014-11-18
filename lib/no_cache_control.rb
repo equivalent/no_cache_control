@@ -1,5 +1,4 @@
 require "no_cache_control/version"
-require 'pry'
 
 module NoCacheControl
   def self.included(base)
