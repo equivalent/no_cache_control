@@ -39,7 +39,7 @@ Or install it yourself as:
 
 ## Usage
 
-Gem will automaticly automatically append these headers to all your controllers, you don't need to do anything else.
+Gem will append these headers to all your controllers, you don't need to do anything else.
 
 
 ## How to test if it works 
