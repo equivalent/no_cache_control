@@ -41,6 +41,16 @@ Or install it yourself as:
 
 Gem will append these headers to all your controllers, you don't need to do anything else.
 
+### whitelisting controllers that should be cached
+
+```ruby
+class MyCachableController < ActionController::Base
+  skip_before_filter :set_no_cache_control  # rails 3 
+  skip_before_action :set_no_cache_control  # rails 4
+end
+```
+
+Now when I render `MyCachableController` the headers will be default Rails headers
 
 ## How to test if it works 
 
@@ -64,9 +74,7 @@ Gem should work potentionally on any application that uses `ActionController`
 
 Please update this README file if you confirm any other
 
-## Todo
 
-* whitelisting of controllers that should be cached
 
 ## Contributing
 
